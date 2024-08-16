@@ -1,0 +1,19 @@
+﻿<Page x:Class="Practica1.View.AltaProducto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="250" d:DesignWidth="460"
+      Title="AltaProducto">
+
+    <Grid Background="LightGray" Height="250" Width="460">
+        <Label Name="lbProducto" Content="Ingrese el nombre del producto:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtProducto" HorizontalAlignment="Left" Width="400" Height="20" Margin="10,41,0,189"></TextBox>
+        <Label Name="lbProovedor" Content="Ingrese el nombre del proovedor:" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtProovedor" HorizontalAlignment="Left" Width="400" Height="20" Margin="10,109,0,121"></TextBox>
+        <Button Content="Agregar" Click="BtnAgregarProducto" HorizontalAlignment="Center" Margin="0,158,0,0" VerticalAlignment="Top" Height="31" Width="226"/>
+        <Label Name="lbNotificacionAltaProducto" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+    </Grid>
+</Page>
