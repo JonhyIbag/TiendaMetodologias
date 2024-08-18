@@ -1,0 +1,12 @@
+﻿<Window x:Class="Practica1.View.Asignaciones.MostrarProductos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica1.View.Asignaciones"
+        mc:Ignorable="d"
+        Title="MostrarProductos" Height="250" Width="460">
+    <StackPanel Name="grListaProductos" Background="LightGray" Height="250" Width="460">
+
+    </StackPanel>
+</Window>

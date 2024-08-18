@@ -1,7 +1,6 @@
 ﻿
 
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\MainWindow.xaml;;
-FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\MenuPrecios.xaml;;
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Productos\AltaProducto.xaml;;
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Productos\BajaProducto.xaml;;
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Productos\ConsultarProducto.xaml;;
@@ -13,4 +12,9 @@ FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Dep
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Asignaciones\MenuAsignaciones.xaml;;
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Asignaciones\AltaProdDepto.xaml;;
 FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Asignaciones\BajaProdDepto.xaml;;
+FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Asignaciones\ConsultaProdDepto.xaml;;
+FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Asignaciones\MostrarProductos.xaml;;
+FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Precios\AsignarPrecio.xaml;;
+FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Precios\MenuPrecios.xaml;;
+FC:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\View\Precios\ConsultarPrecios.xaml;;
 

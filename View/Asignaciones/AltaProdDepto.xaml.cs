@@ -31,7 +31,7 @@ namespace Practica1.View.Asignaciones
             string claveDepto = txtClaveDepto.Text.ToString();
             string claveProd = txtClaveProd.Text.ToString();
             CtrAsignaciones controlador = new CtrAsignaciones();
-            int resultado = controlador.alta(claveProd, claveDepto);
+            int resultado = controlador.operacion(claveProd, claveDepto, 1, -1);
             if (resultado==1)
                 lbNotificacionAltaProducto.Content = "El producto con clave " + claveProd + " fue asignado al departamento " + claveDepto + " con éxito.";
             else if (resultado== 2)

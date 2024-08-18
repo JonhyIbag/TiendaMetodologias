@@ -1,5 +1,7 @@
-﻿using Practica1.View.Asignaciones;
+﻿using Practica1.Controller;
+using Practica1.View.Asignaciones;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +22,11 @@ namespace Practica1.View
     /// </summary>
     public partial class MenuAsignaciones : Window
     {
+        private CtrAsignaciones controlador; 
+        
         public MenuAsignaciones()
         {
+            this.controlador = new CtrAsignaciones();
             InitializeComponent();
         }
 
@@ -32,6 +37,10 @@ namespace Practica1.View
         private void BtnBaja(object sender, RoutedEventArgs e)
         {
             FrameBotones.Navigate(new BajaProdDepto());
+        }
+        private void BtnConsulta(object sender, RoutedEventArgs e)
+        {
+            FrameBotones.Navigate(new ConsultaProdDepto());
         }
 
         private void BtnSalir(object sender, RoutedEventArgs e)

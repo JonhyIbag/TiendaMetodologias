@@ -9,6 +9,7 @@
     <StackPanel>
         <Button Content="Dar de alta un producto en un depto" Click="BtnAlta" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="31" Width="226"/>
         <Button Content="Dar de baja un producto en un depto" Click="BtnBaja" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="31" Width="226"/>
+        <Button Content="Consulta de productos en un depto" Click="BtnConsulta" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="31" Width="226"/>
         <Button Content="Salir" Click="BtnSalir" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="31" Width="226"/>
         <Frame x:Name="FrameBotones" Height="250" Width="460" Margin="20,20,20,20"/>
     </StackPanel>

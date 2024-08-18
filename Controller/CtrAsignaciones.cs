@@ -1,4 +1,6 @@
 ﻿using Practica1.Model;
+using Practica1.View.Asignaciones;
+using Practica1.View.Precios;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,50 +13,104 @@ namespace Practica1.Controller
 {
     class CtrAsignaciones
     {
-        public int alta(string claveProd, string claveDepto)
+        public int operacion(string claveProd, string claveDepto, int tipoOperacion, double precio)
         {
             int resultado;
             string nombreArchivo = claveDepto + "ProductosDepto.txt";
+            bool exito = false;
 
-            if(existeProductosDepto(nombreArchivo))
+            if (existeProductosDepto(nombreArchivo))
             {
-                if(productoExiste(int.Parse(claveProd)))
+                if (tipoOperacion == 3 || tipoOperacion==5)
                 {
-                    if (agregarProductoAlDepto(nombreArchivo, int.Parse(claveProd), claveDepto))
-                        resultado = 1; //1 es el caso exitoso
-                    else
-                        resultado =4 ; //4 es el caso donde existe el producto y el departamento pero no se pudo asignar en el archivo
+                    LectorDeArchivo lectorDeArchivo = new LectorDeArchivo(@"C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\Txt\" + nombreArchivo);
+                    ArrayList asignacionesString = lectorDeArchivo.LeerArchivo();
+                    ArrayList asignaciones = extraerDatosProductosEnDepto(asignacionesString);
+                    ArrayList resultadoImprimir = new ArrayList();
+                    if(tipoOperacion == 3)
+                    {
+                        CtrProducto ctrProducto = new CtrProducto();
+                        LectorDeArchivo lectorProductos = new LectorDeArchivo(@"C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\Txt\Productos.Txt");
+                        ArrayList productosString = lectorProductos.LeerArchivo();
+                        ArrayList productos = ctrProducto.extraerDatosProducto(productosString);
+                        for (int i = 0; i<asignaciones.Count; i++)
+                        {
+                            Asignacion asignacionAuxiliar = (Asignacion)asignaciones[i];
+                            for(int j = 0; j<productos.Count; j++)
+                            {
+                                Producto productoAuxiliar = (Producto)productos[j];
+                                if(asignacionAuxiliar.getClaveProd() == productoAuxiliar.getClaveProd())
+                                    resultadoImprimir.Add(productoAuxiliar.getNombreProducto());
+                            }
+                        }
+                    }
+                    else if (tipoOperacion== 5)
+                    {
+                        for (int i = 0; i < asignaciones.Count; i++)
+                        {
+                            Asignacion asignacionAuxiliar = (Asignacion)asignaciones[i];
+                            string linea = asignacionAuxiliar.getClaveProd().ToString() + ", " + asignacionAuxiliar.getPrecio().ToString();
+                            resultadoImprimir.Add(linea);
+
+                        }
+                    }
+                    MostrarProductos mostrarProductos = new MostrarProductos(resultadoImprimir);
+                    mostrarProductos.Show();
+                    resultado = 1;//1 es el caso exitoso
                 }
                 else
-                    resultado = 2;//2 es el caso donde no existe el producto
-                
+                { 
+                    if (productoExiste(int.Parse(claveProd)))
+                    {
+                        if (tipoOperacion == 2)
+                            exito = borrarProductoAlDepto(nombreArchivo, int.Parse(claveProd), claveDepto);
+                        else if (tipoOperacion == 1)
+                            exito = agregarProductoAlDepto(nombreArchivo, int.Parse(claveProd), claveDepto);
+                        else if(tipoOperacion == 4)
+                            exito=asignarPrecio(nombreArchivo, int.Parse(claveProd), claveDepto, precio);
+
+                        if (exito)
+                            resultado = 1; //1 es el caso exitoso
+                        else
+                            resultado = 4; //4 es el caso donde existe el producto y el departamento pero no se pudo asignar en el archivo
+                    }
+                    else
+                        resultado = 2;//2 es el caso donde no existe el producto
+                }
             }
             else
                 resultado = 3;//3 es el caso donde no existe el departamento
             return resultado;
         }
 
-        public int baja(string claveProd, string claveDepto)
+        private bool asignarPrecio(string nombreArchivo, int claveProd, string claveDepto, double precio)
         {
-            int resultado;
-            string nombreArchivo = claveDepto + "ProductosDepto.txt";
+            string ruta = @"C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\Txt\" + nombreArchivo;
+            LectorDeArchivo lectorDeArchivo = new LectorDeArchivo(ruta);
+            ArrayList asignacionesString = lectorDeArchivo.LeerArchivo(); ;
+            ArrayList asignaciones = extraerDatosProductosEnDepto(asignacionesString);
+            ArrayList nuevasAsignaciones = new ArrayList();
+            bool encontrado = false;
+            int indice = 0;
 
-            if (existeProductosDepto(nombreArchivo))
+            for (int i = 0; i < asignaciones.Count; i++)
             {
-                if (productoExiste(int.Parse(claveProd)))
+                Asignacion asignacionAuxiliar = (Asignacion)asignaciones[i];
+                if (asignacionAuxiliar.getClaveProd() == claveProd)
                 {
-                    if (borrarProductoAlDepto(nombreArchivo, int.Parse(claveProd), claveDepto))
-                        resultado = 1; //1 es el caso exitoso
-                    else
-                        resultado = 4; //4 es el caso donde existe el producto y el departamento pero no se pudo asignar en el archivo
+                    encontrado = true;
+                    asignacionAuxiliar.setPrecio(precio);
                 }
-                else
-                    resultado = 2;//2 es el caso donde no existe el producto
+                nuevasAsignaciones.Add(asignacionAuxiliar);
+            }
 
+            if (encontrado)
+            {
+                actualizarProductosDepto(nuevasAsignaciones, ruta);
+                return encontrado;
             }
             else
-                resultado = 3;//3 es el caso donde no existe el departamento
-            return resultado;
+                return encontrado;
         }
 
         private bool borrarProductoAlDepto(string nombreArchivo, int claveProd, string claveDepto)
@@ -145,7 +201,6 @@ namespace Practica1.Controller
                 auxiliar=(Asignacion)productosEnDepto[i];
                 if(auxiliar.getClaveProd()==claveProd)
                     yaAsignado = true;
-                //auxiliar.guardarEnArchivo(archivo);
             }
             if (yaAsignado)
             {

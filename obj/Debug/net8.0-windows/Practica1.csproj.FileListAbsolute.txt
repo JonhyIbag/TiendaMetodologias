@@ -18,8 +18,6 @@ C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\Practica1.pdb
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\Practica1.genruntimeconfig.cache
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\ref\Practica1.dll
-C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\MenuPrecios.g.cs
-C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\MenuPrecios.baml
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Productos\AltaProducto.g.cs
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Productos\BajaProducto.g.cs
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Productos\ConsultarProducto.g.cs
@@ -43,3 +41,13 @@ C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\BajaProdDepto.g.cs
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\BajaProdDepto.baml
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\Practica1.sourcelink.json
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\ConsultaProdDepto.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\MostrarProductos.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\ConsultaProdDepto.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\MostrarProductos.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\AsignarPrecio.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\MenuPrecios.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\AsignarPrecio.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\MenuPrecios.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\ConsultarPrecios.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Precios\ConsultarPrecios.baml

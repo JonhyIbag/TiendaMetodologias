@@ -13,6 +13,12 @@
     <Compile Update="View\Asignaciones\BajaProdDepto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Asignaciones\ConsultaProdDepto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Asignaciones\MostrarProductos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Departamentos\AltaDepto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -20,6 +26,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Departamentos\ConsultarDepartamento.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Precios\AsignarPrecio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Precios\ConsultarPrecios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Productos\AltaProducto.xaml.cs">
@@ -37,7 +49,7 @@
     <Compile Update="View\Departamentos\MenuDepartamentos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\MenuPrecios.xaml.cs">
+    <Compile Update="View\Precios\MenuPrecios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Productos\MenuProductos.xaml.cs">
@@ -54,6 +66,12 @@
     <Page Update="View\Asignaciones\BajaProdDepto.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Asignaciones\ConsultaProdDepto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Asignaciones\MostrarProductos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Departamentos\AltaDepto.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -61,6 +79,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Departamentos\ConsultarDepartamento.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Precios\AsignarPrecio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Precios\ConsultarPrecios.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Productos\AltaProducto.xaml">
@@ -78,7 +102,7 @@
     <Page Update="View\Departamentos\MenuDepartamentos.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\MenuPrecios.xaml">
+    <Page Update="View\Precios\MenuPrecios.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Productos\MenuProductos.xaml">

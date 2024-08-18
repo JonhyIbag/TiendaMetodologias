@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\App.xaml
-13-1526548072
+171458148178
 
-23-1728312626
+27-1391826660
 198-635017904
-MainWindow.xaml;View\Asignaciones\AltaProdDepto.xaml;View\Asignaciones\BajaProdDepto.xaml;View\Asignaciones\MenuAsignaciones.xaml;View\Departamentos\AltaDepto.xaml;View\Departamentos\BajaDepto.xaml;View\Departamentos\ConsultarDepartamento.xaml;View\Departamentos\MenuDepartamentos.xaml;View\MenuPrecios.xaml;View\Productos\AltaProducto.xaml;View\Productos\BajaProducto.xaml;View\Productos\ConsultarProducto.xaml;View\Productos\MenuProductos.xaml;
+MainWindow.xaml;View\Asignaciones\AltaProdDepto.xaml;View\Asignaciones\BajaProdDepto.xaml;View\Asignaciones\ConsultaProdDepto.xaml;View\Asignaciones\MenuAsignaciones.xaml;View\Asignaciones\MostrarProductos.xaml;View\Departamentos\AltaDepto.xaml;View\Departamentos\BajaDepto.xaml;View\Departamentos\ConsultarDepartamento.xaml;View\Departamentos\MenuDepartamentos.xaml;View\Precios\AsignarPrecio.xaml;View\Precios\ConsultarPrecios.xaml;View\Precios\MenuPrecios.xaml;View\Productos\AltaProducto.xaml;View\Productos\BajaProducto.xaml;View\Productos\ConsultarProducto.xaml;View\Productos\MenuProductos.xaml;
 
 False
 
