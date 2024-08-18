@@ -29,6 +29,10 @@ namespace Practica1.View
         {
             FrameBotones.Navigate(new AltaProdDepto());
         }
+        private void BtnBaja(object sender, RoutedEventArgs e)
+        {
+            FrameBotones.Navigate(new BajaProdDepto());
+        }
 
         private void BtnSalir(object sender, RoutedEventArgs e)
         {

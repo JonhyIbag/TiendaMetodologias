@@ -10,6 +10,9 @@
     <Compile Update="View\Asignaciones\AltaProdDepto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Asignaciones\BajaProdDepto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Departamentos\AltaDepto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Asignaciones\AltaProdDepto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Asignaciones\BajaProdDepto.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Departamentos\AltaDepto.xaml">

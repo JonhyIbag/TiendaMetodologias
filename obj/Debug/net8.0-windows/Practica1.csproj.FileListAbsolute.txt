@@ -40,3 +40,6 @@ C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\MenuAsignaciones.baml
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\AltaProdDepto.g.cs
 C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\AltaProdDepto.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\BajaProdDepto.g.cs
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\View\Asignaciones\BajaProdDepto.baml
+C:\Users\jonhy\OneDrive\Escritorio\Trimestre IX\Metodologias\Practica1\obj\Debug\net8.0-windows\Practica1.sourcelink.json
